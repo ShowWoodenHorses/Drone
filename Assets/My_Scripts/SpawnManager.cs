@@ -7,6 +7,8 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private List<GameObject> spawnListPrefabs = new List<GameObject>();
     [SerializeField] private List<Transform> spawnPointsTransform = new List<Transform>();
     [SerializeField] private Transform _spawnTransform;
+    [SerializeField] private GameObject _target;
+    [SerializeField] private GameObject _player;
     [SerializeField] private float _startTimer;
     [SerializeField] private float _timer;
 
@@ -29,7 +31,9 @@ public class SpawnManager : MonoBehaviour
     {
         int indexPrefabs = Random.Range(0, spawnListPrefabs.Count);
         int indexTransform = Random.Range(0, spawnPointsTransform.Count);
-        Instantiate(spawnListPrefabs[indexPrefabs], spawnPointsTransform[indexTransform].position, Quaternion.identity);
+        GameObject obj = Instantiate(spawnListPrefabs[indexPrefabs], 
+            spawnPointsTransform[indexTransform].position, Quaternion.identity);
+        obj.GetComponent<EnemyController>().Initialize(_target, _player);
         return;
     }
 }

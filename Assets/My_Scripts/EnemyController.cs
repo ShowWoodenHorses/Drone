@@ -10,7 +10,8 @@ public class EnemyController : MonoBehaviour, IDamagable
     [SerializeField] private int _health;
     [SerializeField] private NavMeshAgent _agent;
 
-    public GameObject target;
+    [SerializeField] private GameObject _target;
+    public GameObject player;
     public int Health
     {
         get
@@ -26,9 +27,14 @@ public class EnemyController : MonoBehaviour, IDamagable
             }
         }
     }
+
+    public void Initialize(GameObject target, GameObject player)
+    {
+        _target = target;
+        this.player = player;
+    }
     private void Awake()
     {
-        target = GameObject.FindGameObjectWithTag("Target");
         _agent = GetComponent<NavMeshAgent>();
     }
     void Start()
@@ -38,7 +44,7 @@ public class EnemyController : MonoBehaviour, IDamagable
 
     private void Update()
     {
-        _agent.SetDestination(target.transform.position);
+        _agent.SetDestination(_target.transform.position);
     }
     public void Die()
     {

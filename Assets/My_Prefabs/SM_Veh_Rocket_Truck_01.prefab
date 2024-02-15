@@ -512,6 +512,7 @@ GameObject:
   - component: {fileID: 3999789056855544560}
   - component: {fileID: 6734812479062916317}
   - component: {fileID: 855049634164246410}
+  - component: {fileID: 1310889483662743817}
   - component: {fileID: 8138335079911588369}
   m_Layer: 0
   m_Name: SM_Veh_Rocket_Truck_01
@@ -652,7 +653,28 @@ MonoBehaviour:
   _maxHealth: 1
   _health: 0
   _agent: {fileID: 0}
-  target: {fileID: 0}
+  _target: {fileID: 0}
+  player: {fileID: 0}
+--- !u!114 &1310889483662743817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477029087013678910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c16c9019d7a1d494faa4a8be2497cd2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 0}
+  _rotateElementInEnemy: {fileID: 3400647301779989816}
+  _distance: 25
+  _speedRotate: 100
+  _bulletPrefab: {fileID: 4682811055162138508, guid: bb34ee18202894d4b978816425c2cbe7, type: 3}
+  _spawnBulletTransform: {fileID: 7511372819557380868}
+  _cooldownTimer: 5
+  _isCooldown: 0
 --- !u!95 &8138335079911588369
 Animator:
   serializedVersion: 5
@@ -1116,8 +1138,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3400647301779989816}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.16789417, z: -1.5350811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.16789417, z: -0.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1133,6 +1155,7 @@ Transform:
   - {fileID: 8080657692969880978}
   - {fileID: 4945292084451967180}
   - {fileID: 2362095784692811577}
+  - {fileID: 7511372819557380868}
   m_Father: {fileID: 4418962673594469704}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4209357558815664177
@@ -1706,6 +1729,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &7111825536798971347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7511372819557380868}
+  m_Layer: 0
+  m_Name: SpawnRocket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7511372819557380868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7111825536798971347}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.04, y: 0.69, z: 6.15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3509125647988593440}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7152942849687923756
 GameObject:
   m_ObjectHideFlags: 0
