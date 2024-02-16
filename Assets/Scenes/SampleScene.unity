@@ -227,6 +227,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1692748756269556152, guid: 53ff01d080e2b7f4a962a748ad343a25, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.652
+      objectReference: {fileID: 0}
     - target: {fileID: 1897211967287820642, guid: 53ff01d080e2b7f4a962a748ad343a25, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -375,7 +379,7 @@ GameObject:
   - component: {fileID: 383125255}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

@@ -821,6 +821,7 @@ MonoBehaviour:
   _distance: 20
   _speedRotate: 150
   _bulletPrefab: {fileID: 2923282876956977500, guid: 478038cf701c25841a0beb060f784c61, type: 3}
+  _effectShot: {fileID: 1126046646508270, guid: f913bc3b5f93c1d4cac760813a9a6bf1, type: 3}
   _spawnBulletTransform: {fileID: 3436317873680599267}
   _cooldownTimer: 1
   _isCooldown: 0

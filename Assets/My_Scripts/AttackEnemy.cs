@@ -11,6 +11,7 @@ public class AttackEnemy : MonoBehaviour
 
     [Header("Spawn Bullet")]
     [SerializeField] private GameObject _bulletPrefab;
+    [SerializeField] private GameObject _effectShot;
     [SerializeField] private Transform _spawnBulletTransform;
     [SerializeField] private float _cooldownTimer;
     [SerializeField] private bool _isCooldown = false;
@@ -55,8 +56,10 @@ public class AttackEnemy : MonoBehaviour
     private IEnumerator Shot()
     {
         yield return new WaitForSeconds(1f);
+        GameObject effectShot = Instantiate(_effectShot, _spawnBulletTransform.position, Quaternion.identity);
         GameObject rocketObj = Instantiate(_bulletPrefab, _spawnBulletTransform.position, Quaternion.identity);
         rocketObj.GetComponent<ICanAttack>().InitializeAttack(_player);
+        Destroy(effectShot, 1f);
     }
 
     private IEnumerator Cooldown()
