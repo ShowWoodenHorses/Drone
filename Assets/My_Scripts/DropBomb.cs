@@ -21,7 +21,7 @@ public class DropBomb : MonoBehaviour
             {
                 countBomb--;
                 GameObject obj = Instantiate(bomb, spawnPos.position, Quaternion.identity);
-                Destroy(obj, 5f);
+                Destroy(obj, 15f);
             }
         }
     }

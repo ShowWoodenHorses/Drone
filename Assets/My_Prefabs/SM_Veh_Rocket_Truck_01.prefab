@@ -650,7 +650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 729bd8aa25514484c8b65cb94c9c0b8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 1
+  _maxHealth: 2
   _health: 0
   _agent: {fileID: 0}
   _target: {fileID: 0}
@@ -669,7 +669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 0}
   _rotateElementInEnemy: {fileID: 3400647301779989816}
-  _distance: 25
+  _distance: 35
   _speedRotate: 100
   _bulletPrefab: {fileID: 4682811055162138508, guid: bb34ee18202894d4b978816425c2cbe7, type: 3}
   _effectShot: {fileID: 1126046646508270, guid: b8f67011d27e6fb47af6a64f9f004025, type: 3}

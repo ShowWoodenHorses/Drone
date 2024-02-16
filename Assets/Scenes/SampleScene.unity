@@ -233,11 +233,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1897211967287820642, guid: 53ff01d080e2b7f4a962a748ad343a25, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2183456604165115984, guid: 53ff01d080e2b7f4a962a748ad343a25, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4410285861426791802, guid: 53ff01d080e2b7f4a962a748ad343a25, type: 3}
       propertyPath: m_Name
@@ -988,8 +988,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnListPrefabs:
-  - {fileID: 5027068023693379938, guid: 6bf2f2f6533115d48ad3cae81b4419c6, type: 3}
+  - {fileID: 7027913123927307904, guid: febafc1d881af684683e1fa07c84303d, type: 3}
   - {fileID: 1477029087013678910, guid: ea9138a3189b4cf4993305d63a477370, type: 3}
+  - {fileID: 7864981515254633872, guid: ea19d0551ac7fef48b08a6e9d131a6b1, type: 3}
+  - {fileID: 5027068023693379938, guid: 6bf2f2f6533115d48ad3cae81b4419c6, type: 3}
   spawnPointsTransform:
   - {fileID: 38021331}
   - {fileID: 1073578542}

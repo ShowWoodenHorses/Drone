@@ -237,6 +237,7 @@ MonoBehaviour:
   _damage: 2
   _rb: {fileID: 0}
   _effectExplotion: {fileID: 1974830201887114, guid: 8baff3207836e304f95274c39c8d572c, type: 3}
+  _effectInteraction: {fileID: 1974830201887114, guid: 536f92f2f8d80624aa75ac72b92b5195, type: 3}
   _isAttack: 0
 --- !u!1001 &7466437396565468699
 PrefabInstance:

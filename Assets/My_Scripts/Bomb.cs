@@ -20,12 +20,14 @@ public class Bomb : MonoBehaviour
             other.transform.GetComponent<EnemyController>().TakeDamage(_damage);
             Destroy(explotion, 1f);
             Destroy(gameObject);
+            return;
         }
         if (other.gameObject.CompareTag("Obstacle"))
         {
-            GameObject interaction = Instantiate(_effectExplotion, transform.position, Quaternion.identity);
+            GameObject interaction = Instantiate(_effectInteraction, transform.position, Quaternion.identity);
             Destroy(interaction, 1f);
             Destroy(gameObject);
+            return;
         }
     }
 }

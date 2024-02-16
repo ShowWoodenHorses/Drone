@@ -21,7 +21,7 @@ public class EnemyController : MonoBehaviour, IDamagable
         set
         {
             _health = value;
-            if (_health < _maxHealth)
+            if (_health <= 0)
             {
                 Die();
             }
