@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4270426417691164246}
   - component: {fileID: 6788167844663356183}
   - component: {fileID: 1676885529617748781}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_L_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4546377099536813183}
   - component: {fileID: 21870870227880477}
   - component: {fileID: 7813077136665830002}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_L_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 7497628164972187997}
   - component: {fileID: 2494274208787362396}
   - component: {fileID: 4171739419300158191}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Bottom_Dish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 3290486967066838364}
   - component: {fileID: 1055587079667687961}
   - component: {fileID: 9096241803620426642}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Top_Dish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 4703049810459844297}
   - component: {fileID: 1979587549875585596}
   - component: {fileID: 4619066137520961542}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_L_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 8392046119499674588}
   - component: {fileID: 8308103349065837130}
   - component: {fileID: 6978791328215631704}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_R_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 2898689602677345697}
   - component: {fileID: 6809210689388567025}
   - component: {fileID: 8661666327787343662}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_L_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,7 +633,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 15, y: 5, z: 15}
+  m_Size: {x: 15, y: 10, z: 15}
   m_Center: {x: 0, y: -2, z: 0}
 --- !u!1 &3166299173016522417
 GameObject:
@@ -646,7 +646,7 @@ GameObject:
   - component: {fileID: 1521342938796932292}
   - component: {fileID: 6998213525710017333}
   - component: {fileID: 7959958339319145633}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_R_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -729,7 +729,7 @@ GameObject:
   - component: {fileID: 4612648619512778464}
   - component: {fileID: 4836906600772600563}
   - component: {fileID: 6022316400864749322}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -812,7 +812,7 @@ GameObject:
   - component: {fileID: 7115424836458510853}
   - component: {fileID: 5787356756751047406}
   - component: {fileID: 948197412542674822}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -895,7 +895,7 @@ GameObject:
   - component: {fileID: 7011973083989645618}
   - component: {fileID: 5690379579241309995}
   - component: {fileID: 8071669032682632591}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_R_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -978,7 +978,7 @@ GameObject:
   - component: {fileID: 4311314007346955930}
   - component: {fileID: 1585338937552075936}
   - component: {fileID: 6452156625123967511}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_L_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1061,7 +1061,7 @@ GameObject:
   - component: {fileID: 3580058737451586474}
   - component: {fileID: 4183238815689498718}
   - component: {fileID: 5648661596090380914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_R_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1144,7 +1144,7 @@ GameObject:
   - component: {fileID: 5200854067973833181}
   - component: {fileID: 586690843105392439}
   - component: {fileID: 1190044101669250372}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_L_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1227,7 +1227,7 @@ GameObject:
   - component: {fileID: 8174521765711869821}
   - component: {fileID: 8797745139483629220}
   - component: {fileID: 8903470005282925514}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_R_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1310,7 +1310,7 @@ GameObject:
   - component: {fileID: 2820719970793901381}
   - component: {fileID: 4435341188494918791}
   - component: {fileID: 8330751580736917733}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_R_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1397,7 +1397,7 @@ GameObject:
   - component: {fileID: 3101853787208550846}
   - component: {fileID: 3116284867697217030}
   - component: {fileID: 7864642051733126992}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1574,7 +1574,7 @@ GameObject:
   - component: {fileID: 6537379403613214044}
   - component: {fileID: 2268104765047588144}
   - component: {fileID: 2807006081723029795}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_L_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1657,7 +1657,7 @@ GameObject:
   - component: {fileID: 2758888682774144148}
   - component: {fileID: 5753574169661104021}
   - component: {fileID: 6253254120801694385}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_L_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1740,7 +1740,7 @@ GameObject:
   - component: {fileID: 6669575900869680190}
   - component: {fileID: 6001334490802264035}
   - component: {fileID: 3207559379900591053}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Radar_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1825,7 +1825,7 @@ GameObject:
   - component: {fileID: 5925414875986954218}
   - component: {fileID: 1369047430106405089}
   - component: {fileID: 3985510697961082015}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_R_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1908,7 +1908,7 @@ GameObject:
   - component: {fileID: 1480918582920184182}
   - component: {fileID: 7254390898098235259}
   - component: {fileID: 2434126730011947653}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Radar_Tank_01_Track_Wheel_R_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1988,13 +1988,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6045577699473656705}
     m_Modifications:
+    - target: {fileID: 1464377976957037415, guid: bb21ae8752ef89644adb4bbac41d0c5f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4649027784386267730, guid: bb21ae8752ef89644adb4bbac41d0c5f, type: 3}
       propertyPath: m_LocalScale.x
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4649027784386267730, guid: bb21ae8752ef89644adb4bbac41d0c5f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.63137
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4649027784386267730, guid: bb21ae8752ef89644adb4bbac41d0c5f, type: 3}
       propertyPath: m_LocalScale.z
@@ -2006,7 +2010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4649027784386267730, guid: bb21ae8752ef89644adb4bbac41d0c5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.42
       objectReference: {fileID: 0}
     - target: {fileID: 4649027784386267730, guid: bb21ae8752ef89644adb4bbac41d0c5f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2040,14 +2044,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4800365745150365676, guid: bb21ae8752ef89644adb4bbac41d0c5f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5292437588689499766, guid: bb21ae8752ef89644adb4bbac41d0c5f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5631593296359873107, guid: bb21ae8752ef89644adb4bbac41d0c5f, type: 3}
       propertyPath: m_Name
       value: FX_LightRayRound_01 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631593296359873107, guid: bb21ae8752ef89644adb4bbac41d0c5f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7100554758406044857, guid: bb21ae8752ef89644adb4bbac41d0c5f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3d83df3b708c500409d8bf892fc12f48, type: 2}
+    - target: {fileID: 8825828031803752148, guid: bb21ae8752ef89644adb4bbac41d0c5f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

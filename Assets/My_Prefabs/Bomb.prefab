@@ -233,12 +233,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d56ce31d6def07b4281505b99943f0f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _distance: 5
+  _distance: 100
   _damage: 2
   _rb: {fileID: 0}
   _effectExplotion: {fileID: 1974830201887114, guid: 8baff3207836e304f95274c39c8d572c, type: 3}
   _effectInteraction: {fileID: 1974830201887114, guid: 536f92f2f8d80624aa75ac72b92b5195, type: 3}
-  _isAttack: 0
+  _raduisAttackObj: {fileID: 8016895366072529066, guid: 8e43731001b6b444891d877512ee254e, type: 3}
 --- !u!1001 &7466437396565468699
 PrefabInstance:
   m_ObjectHideFlags: 0

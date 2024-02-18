@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1925070570158349370}
   - component: {fileID: 3531639470528520888}
   - component: {fileID: 8867943170164743337}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Wheel_fr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4945292084451967180}
   - component: {fileID: 1543195127557983801}
   - component: {fileID: 7553658886966065050}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Rocket_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 5078563292244216593}
   - component: {fileID: 191260330076395354}
   - component: {fileID: 6522214630766506283}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Wheel_rl2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 1445240022323302424}
   - component: {fileID: 4104201066825026627}
   - component: {fileID: 6911635417863499753}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Wheel_fl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 434930081241057415}
   - component: {fileID: 8664625476846358681}
   - component: {fileID: 6563937985471007970}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Rocket_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 717942923144541349}
   - component: {fileID: 2521995251523774764}
   - component: {fileID: 7192957835876575279}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Rocket_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -514,7 +514,7 @@ GameObject:
   - component: {fileID: 855049634164246410}
   - component: {fileID: 1310889483662743817}
   - component: {fileID: 8138335079911588369}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -708,7 +708,7 @@ GameObject:
   - component: {fileID: 1662494363147682271}
   - component: {fileID: 8459481915174245802}
   - component: {fileID: 8296816190255689007}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Wheel_rl1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 9088760639582061934}
   - component: {fileID: 3194003393946840327}
   - component: {fileID: 48212623428255427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Rocket_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -874,7 +874,7 @@ GameObject:
   - component: {fileID: 1634024317074053702}
   - component: {fileID: 1394734058482464066}
   - component: {fileID: 906001559991139777}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Rocket_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -957,7 +957,7 @@ GameObject:
   - component: {fileID: 4766491823207565121}
   - component: {fileID: 8008719720659102313}
   - component: {fileID: 2830806460530141921}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Wheel_rr2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1040,7 +1040,7 @@ GameObject:
   - component: {fileID: 3347761885229749808}
   - component: {fileID: 4931221518280669079}
   - component: {fileID: 2896391246418735409}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Rocket_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1124,7 +1124,7 @@ GameObject:
   - component: {fileID: 4209357558815664177}
   - component: {fileID: 3197645292931412027}
   - component: {fileID: 6684856681322243340}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Rocket_Battery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1242,7 +1242,7 @@ GameObject:
   - component: {fileID: 8080657692969880978}
   - component: {fileID: 2835337829308633241}
   - component: {fileID: 2418693910002720644}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Rocket_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1325,7 +1325,7 @@ GameObject:
   - component: {fileID: 1120287848494126816}
   - component: {fileID: 1082824626129465573}
   - component: {fileID: 7172488008192099316}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Rocket_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1408,7 +1408,7 @@ GameObject:
   - component: {fileID: 2362095784692811577}
   - component: {fileID: 4003482419446472408}
   - component: {fileID: 8394766016823412847}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Rocket_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1491,7 +1491,7 @@ GameObject:
   - component: {fileID: 832929582877976646}
   - component: {fileID: 3876558515651663735}
   - component: {fileID: 8855146214437198971}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Rocket_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1574,7 +1574,7 @@ GameObject:
   - component: {fileID: 2225899228795984633}
   - component: {fileID: 820752824586767744}
   - component: {fileID: 8565446953763503922}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1657,7 +1657,7 @@ GameObject:
   - component: {fileID: 4418962673594469704}
   - component: {fileID: 5192362429249621807}
   - component: {fileID: 1071859851203697704}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1739,7 +1739,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7511372819557380868}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpawnRocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1772,7 +1772,7 @@ GameObject:
   - component: {fileID: 8057442351950773574}
   - component: {fileID: 726897836987613916}
   - component: {fileID: 6498391965202700395}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Wheel_rr1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1855,7 +1855,7 @@ GameObject:
   - component: {fileID: 4688924135706943369}
   - component: {fileID: 7013261102543418643}
   - component: {fileID: 1381956650957896346}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_SteeringW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1938,7 +1938,7 @@ GameObject:
   - component: {fileID: 2396845032818849254}
   - component: {fileID: 1198489178254159264}
   - component: {fileID: 495350428236722584}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Rocket_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2021,7 +2021,7 @@ GameObject:
   - component: {fileID: 8624435970613655986}
   - component: {fileID: 3262289209756631463}
   - component: {fileID: 1974802339692266401}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Rocket_Truck_01_Rocket_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}

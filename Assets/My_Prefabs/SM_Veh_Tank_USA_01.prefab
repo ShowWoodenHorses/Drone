@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5949562882858261502}
   - component: {fileID: 1974438713494159065}
   - component: {fileID: 5055961466687363316}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Turret_Hatch_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 7477786281001391029}
   - component: {fileID: 5634944237146586409}
   - component: {fileID: 8227664397896877520}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_R_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 1909511763688000548}
   - component: {fileID: 1239382061029278130}
   - component: {fileID: 6048263804517267778}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_L_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7897633927027874860}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeaponObj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 8615270335554851372}
   - component: {fileID: 8102799576482051980}
   - component: {fileID: 7260731455601706412}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_R_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 7288731182285776013}
   - component: {fileID: 7766936054355113643}
   - component: {fileID: 7264513107936793560}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_R_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -459,7 +459,7 @@ GameObject:
   - component: {fileID: 2847319185755887430}
   - component: {fileID: 3842080549523007785}
   - component: {fileID: 6417654175068126951}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Turret_Hatch_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -542,7 +542,7 @@ GameObject:
   - component: {fileID: 3724854269531544822}
   - component: {fileID: 5401238165629734775}
   - component: {fileID: 5992255439557576299}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_L_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -625,7 +625,7 @@ GameObject:
   - component: {fileID: 5412523648806036779}
   - component: {fileID: 6006498444677180483}
   - component: {fileID: 1986872752146900745}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_L_07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -708,7 +708,7 @@ GameObject:
   - component: {fileID: 7374328984893130677}
   - component: {fileID: 3914434045987596621}
   - component: {fileID: 2172540979979555262}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_L_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -792,7 +792,7 @@ GameObject:
   - component: {fileID: 971460314905852}
   - component: {fileID: 1345502473694365497}
   - component: {fileID: 2936948531631838234}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Turret_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -900,7 +900,7 @@ GameObject:
   - component: {fileID: 5601080865564808051}
   - component: {fileID: 4444150782005689242}
   - component: {fileID: 5931631149209979025}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_R_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -983,7 +983,7 @@ GameObject:
   - component: {fileID: 926161583465859677}
   - component: {fileID: 5548154132567127761}
   - component: {fileID: 6518572869128652933}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_R_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1066,7 +1066,7 @@ GameObject:
   - component: {fileID: 2623682687428406656}
   - component: {fileID: 1097629897297926823}
   - component: {fileID: 8182176334615905902}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1149,7 +1149,7 @@ GameObject:
   - component: {fileID: 6392223105827396786}
   - component: {fileID: 3242439474464790239}
   - component: {fileID: 196795532951024278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_R_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1232,7 +1232,7 @@ GameObject:
   - component: {fileID: 7683130581912300577}
   - component: {fileID: 624725368183601414}
   - component: {fileID: 2770840061986231129}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_R_09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1315,7 +1315,7 @@ GameObject:
   - component: {fileID: 2642138127613028735}
   - component: {fileID: 4590734534354753922}
   - component: {fileID: 7697527679480957267}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1398,7 +1398,7 @@ GameObject:
   - component: {fileID: 5954769397147947346}
   - component: {fileID: 3452956738936097272}
   - component: {fileID: 1950311148869497377}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Turret_Barrel_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1481,7 +1481,7 @@ GameObject:
   - component: {fileID: 8519418773199910867}
   - component: {fileID: 2600162427625968716}
   - component: {fileID: 9127766509422416240}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_R_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1564,7 +1564,7 @@ GameObject:
   - component: {fileID: 7995960737041009105}
   - component: {fileID: 288419485027591367}
   - component: {fileID: 570469548932266135}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_L_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1651,7 +1651,7 @@ GameObject:
   - component: {fileID: 2897514780411798707}
   - component: {fileID: 841002000686913855}
   - component: {fileID: 6598208598856736621}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1808,7 +1808,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 2
-  m_Speed: 1
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1831,7 +1831,7 @@ GameObject:
   - component: {fileID: 1210298399340908507}
   - component: {fileID: 3182497185865312974}
   - component: {fileID: 4747602064361414765}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_ReactiveArmor_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1914,7 +1914,7 @@ GameObject:
   - component: {fileID: 5244484158752608392}
   - component: {fileID: 326783899618905315}
   - component: {fileID: 5404632995108729592}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_L_09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1997,7 +1997,7 @@ GameObject:
   - component: {fileID: 3621554928150587283}
   - component: {fileID: 2826168133506270372}
   - component: {fileID: 2651452810516724437}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_L_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2080,7 +2080,7 @@ GameObject:
   - component: {fileID: 8141068956031570882}
   - component: {fileID: 6597669481206691035}
   - component: {fileID: 4899137841528910916}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_R_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2163,7 +2163,7 @@ GameObject:
   - component: {fileID: 7745061270876787337}
   - component: {fileID: 7342935812464400614}
   - component: {fileID: 7972942892158310695}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_L_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2246,7 +2246,7 @@ GameObject:
   - component: {fileID: 5004689796356842214}
   - component: {fileID: 5294969519463388012}
   - component: {fileID: 5664163913829699012}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Turret_Hatch_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2329,7 +2329,7 @@ GameObject:
   - component: {fileID: 9110873739684375264}
   - component: {fileID: 8407517376070033642}
   - component: {fileID: 6047535172217834334}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Veh_Tank_USA_Track_Wheel_L_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2413,6 +2413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FX_Grenade_Smoke_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1095787749935704, guid: cc606b05b54463b41bd3f1744812102d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4090296723481812, guid: cc606b05b54463b41bd3f1744812102d, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -2490,6 +2494,10 @@ PrefabInstance:
     - target: {fileID: 1807292479234486, guid: 16328015ebf7d0e40930532a8e049e81, type: 3}
       propertyPath: m_Name
       value: FX_Fog
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807292479234486, guid: 16328015ebf7d0e40930532a8e049e81, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1807292479234486, guid: 16328015ebf7d0e40930532a8e049e81, type: 3}
       propertyPath: m_IsActive
