@@ -28,11 +28,17 @@ public class EnemyController : MonoBehaviour, IDamagable
         }
     }
 
+    public void Initialize(GameObject target)
+    {
+        _target = target;
+    }
+
     public void Initialize(GameObject target, GameObject player)
     {
         _target = target;
         this.player = player;
     }
+
     private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
@@ -45,6 +51,10 @@ public class EnemyController : MonoBehaviour, IDamagable
     private void Update()
     {
         _agent.SetDestination(_target.transform.position);
+    }
+    public GameObject SetTargetObj()
+    {
+        return _target;
     }
     public void Die()
     {
