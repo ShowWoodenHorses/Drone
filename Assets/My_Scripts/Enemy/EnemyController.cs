@@ -6,8 +6,8 @@ using static UnityEngine.GraphicsBuffer;
 
 public class EnemyController : MonoBehaviour, IDamagable
 {
-    [SerializeField] private int _maxHealth;
-    [SerializeField] private int _health;
+    [SerializeField] private protected int _maxHealth;
+    [SerializeField] private protected int _health;
     [SerializeField] private NavMeshAgent _agent;
 
     [SerializeField] private GameObject _target;
@@ -56,7 +56,6 @@ public class EnemyController : MonoBehaviour, IDamagable
         {
             Quaternion newRotation = Quaternion.Euler(-hit.transform.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
             transform.rotation = newRotation;
-            Debug.Log(hit.transform.eulerAngles.x);
         }
     }
     public GameObject SetTargetObj()

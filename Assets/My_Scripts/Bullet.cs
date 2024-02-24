@@ -28,6 +28,7 @@ public class Bullet : MonoBehaviour, ICanAttack
     private void Update()
     {
         _rb.AddForce(transform.forward * _speed * Time.deltaTime,ForceMode.Impulse);
+        Destroy(gameObject,5f);
     }
     public void OnTriggerEnter(Collider other)
     {

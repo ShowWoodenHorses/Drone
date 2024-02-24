@@ -18,7 +18,8 @@ public class AttackEnemy : MonoBehaviour
 
     private void Start()
     {
-        _player = GetComponent<EnemyController>().player;
+        if (_player == null)
+            _player = GetComponent<EnemyController>().player;
     }
 
     private void Update()
@@ -39,7 +40,7 @@ public class AttackEnemy : MonoBehaviour
         Quaternion rotate = _rotateElementInEnemy.transform.rotation;
         _rotateElementInEnemy.transform.rotation = Quaternion.RotateTowards(rotate,
             Quaternion.LookRotation(direction), _speedRotate * Time.deltaTime);
-        if (!_isCooldown)
+        if (!_isCooldown && _rotateElementInEnemy.transform.rotation == Quaternion.LookRotation(direction))
         {
             StartCoroutine(Cooldown());
             StartCoroutine(Shot());
