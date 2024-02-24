@@ -51,6 +51,13 @@ public class EnemyController : MonoBehaviour, IDamagable
     private void Update()
     {
         _agent.SetDestination(_target.transform.position);
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 10f))
+        {
+            Quaternion newRotation = Quaternion.Euler(-hit.transform.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+            transform.rotation = newRotation;
+            Debug.Log(hit.transform.eulerAngles.x);
+        }
     }
     public GameObject SetTargetObj()
     {

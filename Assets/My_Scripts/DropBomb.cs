@@ -12,6 +12,9 @@ public class DropBomb : MonoBehaviour
     public byte maxCountBomb;
     public byte countBomb;
 
+    public float maxHeight;
+    [SerializeField] private float _minHeight;
+
     private void Start()
     {
         skinID = PlayerPrefs.GetInt(nameSkin);
@@ -20,6 +23,10 @@ public class DropBomb : MonoBehaviour
     }
     void Update()
     {
+        if (transform.position.y > maxHeight)
+        {
+            transform.position = new Vector3(transform.position.x, maxHeight, transform.position.z);
+        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (countBomb > 0)
