@@ -15,4 +15,10 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
         Time.timeScale = 1.0f;
     }
+
+    public void MainMenuClick()
+    {
+        SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1.0f;
+    }
 }
