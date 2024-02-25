@@ -57,7 +57,7 @@ public class AttackEnemy : MonoBehaviour
     private IEnumerator Shot()
     {
         yield return new WaitForSeconds(1f);
-        GameObject effectShot = Instantiate(_effectShot, _spawnBulletTransform.position, Quaternion.identity);
+        GameObject effectShot = Instantiate(_effectShot, _spawnBulletTransform.position, _rotateElementInEnemy.transform.rotation);
         GameObject rocketObj = Instantiate(_bulletPrefab, _spawnBulletTransform.position, Quaternion.identity);
         rocketObj.GetComponent<ICanAttack>().InitializeAttack(_player);
         Destroy(effectShot, 1f);
