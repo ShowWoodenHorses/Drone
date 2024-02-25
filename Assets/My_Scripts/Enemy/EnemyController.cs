@@ -70,6 +70,5 @@ public class EnemyController : MonoBehaviour, IDamagable
     public void TakeDamage(int damage)
     {
         Health -= damage;
-        Debug.Log("Damage");
     }
 }
