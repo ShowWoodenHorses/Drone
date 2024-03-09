@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 2_SkinPlayer
   m_EditorClassIdentifier: 
   mass: 10
-  maxCountBomb: 2
+  maxCountBomb: 20
   maxHeight: 50

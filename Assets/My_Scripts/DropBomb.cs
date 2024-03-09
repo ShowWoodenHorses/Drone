@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DropBomb : MonoBehaviour
@@ -29,12 +30,17 @@ public class DropBomb : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (countBomb > 0)
-            {
-                countBomb--;
-                GameObject obj = Instantiate(_bomb, spawnPos.position, Quaternion.identity);
-                Destroy(obj, 15f);
-            }
+            DropBombClick();
+        }
+    }
+
+    public void DropBombClick()
+    {
+        if (countBomb > 0)
+        {
+            countBomb--;
+            GameObject obj = Instantiate(_bomb, spawnPos.position, Quaternion.identity);
+            Destroy(obj, 15f);
         }
     }
 }
