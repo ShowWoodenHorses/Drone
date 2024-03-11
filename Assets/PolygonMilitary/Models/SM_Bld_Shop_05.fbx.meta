@@ -73,14 +73,14 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
-    meshOptimizationFlags: 1
+    meshOptimizationFlags: -1
     indexFormat: 1
-    secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15.000001
-    secondaryUVHardAngle: 88
-    secondaryUVMarginMethod: 0
-    secondaryUVMinLightmapResolution: 40
-    secondaryUVMinObjectScale: 1
+    secondaryUVAngleDistortion: 1
+    secondaryUVAreaDistortion: 1
+    secondaryUVHardAngle: 3
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 1
+    secondaryUVMinObjectScale: 6.3
     secondaryUVPackMargin: 4
     useFileScale: 1
     strictVertexDataChecks: 0

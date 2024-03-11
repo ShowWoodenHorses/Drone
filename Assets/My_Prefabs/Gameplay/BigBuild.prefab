@@ -54,6 +54,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1393188769443548, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 4002272890746368, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5000002
@@ -100,6 +104,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4002272890746368, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23711467931193414, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23711467931193414, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
+      propertyPath: m_ReflectionProbeUsage
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -158,6 +170,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1777808973182438, guid: aa4340c359464c240b251ce18b8b6abe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 4128025754819866, guid: aa4340c359464c240b251ce18b8b6abe, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.4200289
@@ -207,6 +223,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 23201337031136292, guid: aa4340c359464c240b251ce18b8b6abe, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23201337031136292, guid: aa4340c359464c240b251ce18b8b6abe, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23201337031136292, guid: aa4340c359464c240b251ce18b8b6abe, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 83d0ac776b09d454b8560c53e711c668, type: 2}
@@ -239,6 +263,10 @@ PrefabInstance:
     - target: {fileID: 1393188769443548, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1393188769443548, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4002272890746368, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
       propertyPath: m_LocalScale.x
@@ -286,6 +314,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4002272890746368, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23711467931193414, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23711467931193414, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
+      propertyPath: m_ReflectionProbeUsage
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -344,6 +380,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1393188769443548, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 4002272890746368, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5261002
@@ -390,6 +430,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4002272890746368, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23711467931193414, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23711467931193414, guid: 3b5c13242da56844690057ca479ed14e, type: 3}
+      propertyPath: m_ReflectionProbeUsage
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -448,6 +496,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1656661518892122, guid: ec9b21abbb9c7404b91739adbbe6e849, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 4549572169915800, guid: ec9b21abbb9c7404b91739adbbe6e849, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.8547
@@ -494,6 +546,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549572169915800, guid: ec9b21abbb9c7404b91739adbbe6e849, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23974830161902242, guid: ec9b21abbb9c7404b91739adbbe6e849, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23974830161902242, guid: ec9b21abbb9c7404b91739adbbe6e849, type: 3}
+      propertyPath: m_ReflectionProbeUsage
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -552,6 +612,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1978535154323940, guid: 2516e5d2e77da80409d1fcfc6c9a97a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 4896133274672510, guid: 2516e5d2e77da80409d1fcfc6c9a97a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0500984
@@ -590,6 +654,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4896133274672510, guid: 2516e5d2e77da80409d1fcfc6c9a97a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23518795242471558, guid: 2516e5d2e77da80409d1fcfc6c9a97a3, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23518795242471558, guid: 2516e5d2e77da80409d1fcfc6c9a97a3, type: 3}
+      propertyPath: m_ReflectionProbeUsage
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -648,6 +720,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1978535154323940, guid: 2516e5d2e77da80409d1fcfc6c9a97a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 4896133274672510, guid: 2516e5d2e77da80409d1fcfc6c9a97a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.2699013
@@ -686,6 +762,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4896133274672510, guid: 2516e5d2e77da80409d1fcfc6c9a97a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23518795242471558, guid: 2516e5d2e77da80409d1fcfc6c9a97a3, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23518795242471558, guid: 2516e5d2e77da80409d1fcfc6c9a97a3, type: 3}
+      propertyPath: m_ReflectionProbeUsage
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:

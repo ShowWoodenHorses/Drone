@@ -12,13 +12,13 @@ public class MenuManager : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        LoadingScene.SwitchScene("SampleScene");
         Time.timeScale = 1.0f;
     }
 
     public void MainMenuClick()
     {
-        SceneManager.LoadScene("MainMenu");
+        LoadingScene.SwitchScene("MainMenu");
         Time.timeScale = 1.0f;
     }
 }

@@ -20,26 +20,6 @@ public class MobileControllerDrone : MonoBehaviour
     private void FixedUpdate()
     {
         MovingDroneMobile();
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            Debug.Log("Left");
-            RotateDroneLeft();
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            Debug.Log("Right");
-            RotateDroneRight();
-        }
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            Debug.Log("Up");
-            MoveUpDrone();
-        }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            Debug.Log("Down");
-            MoveDownDrone();
-        }
     }
 
     private void MovingDroneMobile()

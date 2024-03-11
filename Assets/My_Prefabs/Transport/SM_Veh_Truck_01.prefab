@@ -575,7 +575,7 @@ NavMeshAgent:
   m_Radius: 4
   m_Speed: 3
   m_Acceleration: 8
-  avoidancePriority: 10
+  avoidancePriority: 25
   m_AngularSpeed: 120
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
@@ -598,7 +598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _startSpawnTimer: 5
-  _countEnemyForSpawn: 3
+  _countEnemyForSpawn: 0
   _spawnPrefab: {fileID: 481003511622350094, guid: f144ad612267dcd4fb3bcc5899c334f2, type: 3}
   _spawnsPos:
   - {fileID: 1756129605071346610}
