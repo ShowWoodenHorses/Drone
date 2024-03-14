@@ -8,4 +8,6 @@ public class SkinSettingsSO : ScriptableObject
     public int mass;
     public byte maxCountBomb;
     public int maxHeight;
+    public float speedRotateMobile;
+    public float speedUpDownMobile;
 }

@@ -6,7 +6,7 @@ public class ButtonUp : ButtonHandler
     {
         if (isTap)
         {
-            Vector3 moveUp = (new Vector3(0f, 5f * Time.deltaTime, 0f));
+            Vector3 moveUp = (new Vector3(0f, speedUpDown * Time.deltaTime, 0f));
             Player.transform.Translate(moveUp);
         }
     }

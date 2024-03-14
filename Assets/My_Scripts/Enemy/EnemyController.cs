@@ -11,6 +11,8 @@ public class EnemyController : MonoBehaviour, IDamagable
 
     [SerializeField] private GameObject _target;
     public GameObject player;
+
+    private ArrowDrection _arrowDirection;
     public int Health
     {
         get
@@ -38,6 +40,14 @@ public class EnemyController : MonoBehaviour, IDamagable
         this.player = player;
     }
 
+    public void Initialize(GameObject target, GameObject player, ArrowDrection arrowDirection)
+    {
+        _target = target;
+        this.player = player;
+        _arrowDirection = arrowDirection;
+        _arrowDirection.AddArrowDirection(this.gameObject);
+    }
+
     private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
@@ -50,12 +60,6 @@ public class EnemyController : MonoBehaviour, IDamagable
     private void Update()
     {
         _agent.SetDestination(_target.transform.position);
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 10f))
-        {
-            Quaternion newRotation = Quaternion.Euler(-hit.transform.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
-            transform.rotation = newRotation;
-        }
     }
     public GameObject SetTargetObj()
     {
@@ -64,10 +68,22 @@ public class EnemyController : MonoBehaviour, IDamagable
     public void Die()
     {
         Destroy(gameObject);
+        if (_arrowDirection != null)
+            _arrowDirection.RemoveArrowDirection(this.gameObject);
     }
 
     public void TakeDamage(int damage)
     {
         Health -= damage;
+    }
+
+    private void ChangeRotate()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 10f))
+        {
+            Quaternion newRotation = Quaternion.Euler(-hit.transform.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+            transform.rotation = newRotation;
+        }
     }
 }

@@ -6,7 +6,7 @@ public class ButtonRight : ButtonHandler
     {
         if (isTap)
         {
-            Player.transform.Rotate(0, transform.localPosition.y * -2f * Time.deltaTime, 0);
+            Player.transform.Rotate(0, transform.localPosition.y * -speedRotate * Time.deltaTime, 0);
         }
     }
 }

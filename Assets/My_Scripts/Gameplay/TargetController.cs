@@ -13,7 +13,7 @@ public class TargetController : MonoBehaviour
         if (other.gameObject.GetComponent<EnemyController>())
         {
             Debug.Log("Target");
-            Destroy(other.gameObject);
+            other.gameObject.GetComponent<EnemyController>().Die();
             targetAction();
         }
     }

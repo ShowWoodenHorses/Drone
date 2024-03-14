@@ -10,6 +10,7 @@ public class SkinPlayerObject : MonoBehaviour
 
     private Rigidbody _rb;
     private DropBomb _dropBomb;
+    private ButtonHandler _buttonHandler;
     int money = 500;
     private void Awake()
     {
@@ -17,6 +18,7 @@ public class SkinPlayerObject : MonoBehaviour
         PlayerPrefs.Save();
         _rb = GetComponent<Rigidbody>();
         _dropBomb = GetComponent<DropBomb>();
+        _buttonHandler = GetComponent<ButtonHandler>();
         int scinsID = PlayerPrefs.GetInt(nameSkin);
         for (int i = 0; i < skinsObj.Count; i++)
         {
@@ -26,5 +28,7 @@ public class SkinPlayerObject : MonoBehaviour
         _rb.mass = skinsSettings[scinsID].mass;
         _dropBomb.maxCountBomb = skinsSettings[scinsID].maxCountBomb;
         _dropBomb.maxHeight = skinsSettings[scinsID].maxHeight;
+        _buttonHandler.speedRotate = skinsSettings[scinsID].speedRotateMobile;
+        _buttonHandler.speedUpDown = skinsSettings[scinsID].speedUpDownMobile;
     }
 }

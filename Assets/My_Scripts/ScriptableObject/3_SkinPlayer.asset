@@ -15,3 +15,5 @@ MonoBehaviour:
   mass: 4
   maxCountBomb: 30
   maxHeight: 60
+  speedRotateMobile: 70
+  speedUpDownMobile: 17
