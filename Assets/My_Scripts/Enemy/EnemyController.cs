@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 public class EnemyController : MonoBehaviour, IDamagable
 {
@@ -13,6 +14,8 @@ public class EnemyController : MonoBehaviour, IDamagable
     public GameObject player;
 
     private ArrowDrection _arrowDirection;
+
+    public static UnityAction onDieEnemy;
     public int Health
     {
         get
@@ -66,6 +69,13 @@ public class EnemyController : MonoBehaviour, IDamagable
         return _target;
     }
     public void Die()
+    {
+        Destroy(gameObject);
+        onDieEnemy.Invoke();
+        if (_arrowDirection != null)
+            _arrowDirection.RemoveArrowDirection(this.gameObject);
+    }
+    public void DestroyEnemy()
     {
         Destroy(gameObject);
         if (_arrowDirection != null)

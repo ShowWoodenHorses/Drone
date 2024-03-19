@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AttackEnemy : MonoBehaviour
@@ -16,6 +15,8 @@ public class AttackEnemy : MonoBehaviour
     [SerializeField] private float _cooldownTimer;
     [SerializeField] private bool _isCooldown = false;
 
+    [SerializeField] private Vector3 zeroVector3 = new Vector3(0.1f, 0.1f, -1f);
+
     private void Start()
     {
         if (_player == null)
@@ -30,8 +31,9 @@ public class AttackEnemy : MonoBehaviour
             Attack();
 
         }
-        else
+        else if (_rotateElementInEnemy.transform.localRotation != Quaternion.Euler(0f, 0f, 0f))
             ReturnStartPosition();
+        
     }
 
     void Attack()
@@ -51,7 +53,7 @@ public class AttackEnemy : MonoBehaviour
     {
         Quaternion rotate = _rotateElementInEnemy.transform.localRotation;
         _rotateElementInEnemy.transform.localRotation = Quaternion.RotateTowards(rotate,
-            Quaternion.LookRotation(Vector3.zero), _speedRotate * Time.deltaTime);
+            Quaternion.LookRotation(zeroVector3), _speedRotate * Time.deltaTime);
     }
 
     private IEnumerator Shot()

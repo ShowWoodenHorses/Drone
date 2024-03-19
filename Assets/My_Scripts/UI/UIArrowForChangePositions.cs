@@ -5,7 +5,9 @@ using UnityEngine;
 public class UIArrowForChangePositions : MonoBehaviour
 {
 
-    [SerializeField] private GameObject[] _objects;
+    [SerializeField] private GameObject[] _showDroneInShop;
+    [SerializeField] private GameObject[] _hideDroneInShop;
+    [SerializeField] private GameObject[] _objectsDronesForBuy;
     [SerializeField] private GameObject _objArrowLeft;
     [SerializeField] private GameObject _objArrowRight;
     [SerializeField] private int _index = 0;
@@ -13,11 +15,11 @@ public class UIArrowForChangePositions : MonoBehaviour
 
     void Start()
     {
-        foreach (GameObject obj in _objects)
+        foreach (GameObject obj in _objectsDronesForBuy)
         {
             obj.SetActive(false);
         }
-        _objects[_index].SetActive(true);
+        _objectsDronesForBuy[_index].SetActive(true);
     }
 
     private void Update()
@@ -28,7 +30,7 @@ public class UIArrowForChangePositions : MonoBehaviour
         {
             _objArrowLeft.SetActive(true);
         }
-        if (_index == _objects.Length - 1)
+        if (_index == _objectsDronesForBuy.Length - 1)
             _objArrowRight.SetActive(false);
         else
         {
@@ -43,18 +45,26 @@ public class UIArrowForChangePositions : MonoBehaviour
         {
             _index = 0;
         }
-        _objects[_index + 1].SetActive(false);
-        _objects[_index].SetActive(true);
+        _objectsDronesForBuy[_index + 1].SetActive(false);
+        _showDroneInShop[_index + 1].SetActive(false);
+        _hideDroneInShop[_index + 1].SetActive(true);
+        _objectsDronesForBuy[_index].SetActive(true);
+        _showDroneInShop[_index].SetActive(true);
+        _hideDroneInShop[_index].SetActive(false);
     }
 
     public void ArrowRight()
     {
         _index++;
-        if (_index >= _objects.Length)
+        if (_index >= _objectsDronesForBuy.Length)
         {
-            _index = _objects.Length - 1;
+            _index = _objectsDronesForBuy.Length - 1;
         }
-        _objects[_index - 1].SetActive(false);
-        _objects[_index].SetActive(true);
+        _objectsDronesForBuy[_index - 1].SetActive(false);
+        _showDroneInShop[_index - 1].SetActive(false);
+        _hideDroneInShop[_index - 1].SetActive(true);
+        _objectsDronesForBuy[_index].SetActive(true);
+        _showDroneInShop[_index].SetActive(true);
+        _hideDroneInShop[_index].SetActive(false);
     }
 }

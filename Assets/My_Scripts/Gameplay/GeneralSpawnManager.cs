@@ -20,6 +20,8 @@ public class GeneralSpawnManager : MonoBehaviour
 
     [SerializeField] private GameObject TimerToNextWaveObj;
     [SerializeField] private TextMeshProUGUI _textTimerToNextWave;
+    [SerializeField] private TextMeshProUGUI _textCurrentWaveForPause;
+    [SerializeField] private TextMeshProUGUI _textTimeToTheNextWaveForPause;
 
     //Arraies
     [SerializeField] private List<int> countEnemyWithOneWaveList = new List<int>();
@@ -27,10 +29,11 @@ public class GeneralSpawnManager : MonoBehaviour
     [SerializeField] private List<float> startTimeBetweenSpawnEnemyList = new List<float>();
 
 
+
     private void Start()
     {
         _timeBetweenSpawnEnemy = _startTimeBetweenSpawnEnemy;
-        ChangeValve();
+        ChangeWave(_currentWave);
     }
 
     private void Update()
@@ -49,66 +52,35 @@ public class GeneralSpawnManager : MonoBehaviour
             }
             else if (_countEnemyWithOneWave == 0 && _currentWave != _countWave)
             {
-                _currentWave++;
-                ChangeValve();
+                ++_currentWave;
+                ChangeWave(_currentWave);
                 TimerToNextWaveObj.SetActive(true);
             }
-            else if(_currentWave == _countWave)
-            {
-                _currentWave = 0;
-            }
         }
-    }
-
-    private void ChangeValve()
-    {
-        switch (_currentWave)
-        {
-            case 0:
-                _timeBetweenWave = timeBetweenWaveList[0];
-                _countEnemyWithOneWave = countEnemyWithOneWaveList[0];
-                _startTimeBetweenSpawnEnemy = startTimeBetweenSpawnEnemyList[0];
-                break;
-            case 1:
-                _timeBetweenWave = timeBetweenWaveList[1];
-                _countEnemyWithOneWave = countEnemyWithOneWaveList[1];
-                _startTimeBetweenSpawnEnemy = startTimeBetweenSpawnEnemyList[1];
-                break;
-            case 2:
-                _timeBetweenWave = timeBetweenWaveList[2];
-                _countEnemyWithOneWave = countEnemyWithOneWaveList[2];
-                _startTimeBetweenSpawnEnemy = startTimeBetweenSpawnEnemyList[2];
-                spawnerList.Add(spawnManagerWater);
-                break;
-            case 3:
-                _timeBetweenWave = timeBetweenWaveList[3];
-                _countEnemyWithOneWave = countEnemyWithOneWaveList[3];
-                _startTimeBetweenSpawnEnemy = startTimeBetweenSpawnEnemyList[3];
-                break;
-            case 4:
-                _timeBetweenWave = timeBetweenWaveList[4];
-                _countEnemyWithOneWave = countEnemyWithOneWaveList[4];
-                _startTimeBetweenSpawnEnemy = startTimeBetweenSpawnEnemyList[4];
-                break;
-            case 5:
-                _timeBetweenWave = timeBetweenWaveList[5];
-                _countEnemyWithOneWave = countEnemyWithOneWaveList[5];
-                _startTimeBetweenSpawnEnemy = startTimeBetweenSpawnEnemyList[5];
-                break;
-            case 6:
-                _timeBetweenWave = timeBetweenWaveList[6];
-                _countEnemyWithOneWave = countEnemyWithOneWaveList[6];
-                _startTimeBetweenSpawnEnemy = startTimeBetweenSpawnEnemyList[6];
-                break;
-            default:
-                break;
-        }
-        _timeBetweenSpawnEnemy = _startTimeBetweenSpawnEnemy;
     }
 
     public void SkipTimer()
     {
         _timeBetweenWave = 0;
         TimerToNextWaveObj.SetActive(false);
+    }
+
+    public void ChangeWave(int index)
+    {
+        if (_currentWave > _countWave)
+        {
+            _currentWave = 0;
+            index = 0;
+        }
+        int nextIndex = index + 1;
+        _timeBetweenWave = timeBetweenWaveList[index];
+        _countEnemyWithOneWave = countEnemyWithOneWaveList[index];
+        _startTimeBetweenSpawnEnemy = startTimeBetweenSpawnEnemyList[index];
+        _textCurrentWaveForPause.text = _currentWave.ToString();
+        if (nextIndex < timeBetweenWaveList.Count)
+        {
+            _textTimeToTheNextWaveForPause.text = Mathf.Round(timeBetweenWaveList[nextIndex]).ToString();
+        }
+        _timeBetweenSpawnEnemy = _startTimeBetweenSpawnEnemy;
     }
 }

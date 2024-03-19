@@ -4,9 +4,13 @@ public class CheckDevice : MonoBehaviour
 {
     public GameObject Player;
     public GameObject MobileInputPanel;
+    public GameObject ArrowOverEnemy;
+    public GameObject RandomPeople;
 
     void Awake()
     {
+        ArrowOverEnemy.SetActive(SettingManager.isHints);
+        RandomPeople.SetActive(SettingManager.isPopulation);
         if (Application.isMobilePlatform)
         {
             //true

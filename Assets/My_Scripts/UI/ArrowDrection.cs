@@ -58,6 +58,7 @@ public class ArrowDrection : MonoBehaviour
             minDistance = Mathf.Clamp(minDistance, 0f, direction.magnitude);
             Vector3 worldPoint = ray.GetPoint(minDistance);
             arrowEnemy.transform.position = _camera.WorldToScreenPoint(worldPoint);
+            arrowEnemy.transform.rotation = GetRotation(planeIndex);
         }
     }
 

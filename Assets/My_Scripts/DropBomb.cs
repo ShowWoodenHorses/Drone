@@ -10,8 +10,8 @@ public class DropBomb : MonoBehaviour
     public Transform spawnPos;
     [SerializeField] private List<GameObject> bombs = new List<GameObject>();
     [SerializeField] private GameObject _bomb;
-    public byte maxCountBomb;
-    public byte countBomb;
+    public int maxCountBomb;
+    public int countBomb;
 
     public float maxHeight;
     [SerializeField] private float _minHeight;

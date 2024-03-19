@@ -1,14 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using GamePush;
 
 public class MenuManager : MonoBehaviour
 {
-    public void Start()
-    {
-
-    }
 
     public void StartGame()
     {
@@ -20,5 +15,15 @@ public class MenuManager : MonoBehaviour
     {
         LoadingScene.SwitchScene("MainMenu");
         Time.timeScale = 1.0f;
+    }
+
+    public void SetPauseTime()
+    {
+        Time.timeScale = 0f;
+    }
+
+    public void BreakPauseTime()
+    {
+        Time.timeScale = 1f;
     }
 }

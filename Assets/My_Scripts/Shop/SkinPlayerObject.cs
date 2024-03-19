@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SkinPlayerObject : MonoBehaviour
 {
+    [SerializeField] private AudioSource _audio;
     [SerializeField] private List<GameObject> skinsObj = new List<GameObject>();
     [SerializeField] private List<SkinSettingsSO> skinsSettings = new List<SkinSettingsSO>();
     public string nameSkin;
@@ -11,10 +12,8 @@ public class SkinPlayerObject : MonoBehaviour
     private Rigidbody _rb;
     private DropBomb _dropBomb;
     private ButtonHandler _buttonHandler;
-    int money = 500;
     private void Awake()
     {
-        PlayerPrefs.SetInt("CountKillAll", money);
         PlayerPrefs.Save();
         _rb = GetComponent<Rigidbody>();
         _dropBomb = GetComponent<DropBomb>();
@@ -30,5 +29,9 @@ public class SkinPlayerObject : MonoBehaviour
         _dropBomb.maxHeight = skinsSettings[scinsID].maxHeight;
         _buttonHandler.speedRotate = skinsSettings[scinsID].speedRotateMobile;
         _buttonHandler.speedUpDown = skinsSettings[scinsID].speedUpDownMobile;
+    }
+    private void Start()
+    {
+        _audio.volume = PlayerPrefs.GetFloat("VolumeSetting");
     }
 }

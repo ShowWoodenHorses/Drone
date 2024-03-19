@@ -13,10 +13,6 @@ public class SkinShopObject : MonoBehaviour
 
     private void Start()
     {
-        if (PlayerPrefs.HasKey("CountKillAll"))
-        {
-            money = PlayerPrefs.GetInt("CountKillAll");
-        }
 
         if (PlayerPrefs.HasKey(nameSkin))
         {
@@ -50,7 +46,7 @@ public class SkinShopObject : MonoBehaviour
 
     private void Update()
     {
-        textMoney.text = money.ToString();
+        textMoney.text = StaticValue.money.ToString();
 
     }
 }

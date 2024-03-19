@@ -10,7 +10,7 @@ public class SkinObject : MonoBehaviour
     public bool isBuy; // куплен ли скин?
     public bool isSelected; // активирован ли скин?
 
-    int _countKill = 200;
+    int money;
 
     public Button buttonBuy; // ссылка на кнопку "купить"
     public Button buttonSelect; // ссылка на кнопку "применить"
@@ -19,19 +19,19 @@ public class SkinObject : MonoBehaviour
 
     private void Start()
     {
-        //_countKill = PlayerPrefs.GetInt("CountKillAll");
+        money = StaticValue.money;
     }
     public void Buy()
     {
         Debug.Log("Buy");
-        if (_countKill >= cost)
+        if (StaticValue.money >= cost)
         {
-            Debug.Log("_countKill");
-            _countKill -= cost;
+            Debug.Log("Money");
+            StaticValue.money -= cost;
             isBuy = true;
             buttonBuy.gameObject.SetActive(false);
             buttonSelect.gameObject.SetActive(true);
-            PlayerPrefs.SetInt("CountKillAll", _countKill);
+            PlayerPrefs.SetInt("Money", StaticValue.money);
             PlayerPrefs.SetInt("buy" + scinID, 1);
             PlayerPrefs.Save();
         }

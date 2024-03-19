@@ -162,6 +162,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2485569838141742614}
     m_Modifications:
+    - target: {fileID: 1022476125520662, guid: aa4340c359464c240b251ce18b8b6abe, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1777808973182438, guid: aa4340c359464c240b251ce18b8b6abe, type: 3}
       propertyPath: m_Name
       value: SM_Env_Bridge_Middle (1)
@@ -239,7 +243,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 8c0f4e8886cceb34a9f148bf1485f656, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1022476125520662, guid: aa4340c359464c240b251ce18b8b6abe, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa4340c359464c240b251ce18b8b6abe, type: 3}

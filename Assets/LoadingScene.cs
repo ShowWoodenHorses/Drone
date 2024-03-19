@@ -44,4 +44,5 @@ public class LoadingScene : MonoBehaviour
         isOverAnimationLoading = true;
         loadingSceneAsync.allowSceneActivation = true;
     }
+
 }
