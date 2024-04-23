@@ -12,15 +12,37 @@ public class AdsManager : MonoBehaviour
     public static UnityAction onFailedRewardAds;
     public static UnityAction onFinalRewardAds;
 
-    [SerializeField] private GameObject _ADSPanel;
+    [SerializeField] private SkinObject _skinADS;
+
+    [SerializeField] private GameObject AdBlockPanel;
+    [SerializeField] private GameObject AdS_ReceivedPanel;
+    private int _isShowedAdBlockPanel = 0;
 
     private void Awake()
     {
+        ShowSticky();
         if (Instance == null)
         {
             Instance = this;
         }
+        if (PlayerPrefs.HasKey("ShowedAdBlockPanel"))
+        {
+            _isShowedAdBlockPanel = PlayerPrefs.GetInt("ShowedAdBlockPanel");
+        }
     }
+
+    private void Start()
+    {
+        AdS_ReceivedPanel.SetActive(false);
+        if (GP_Ads.IsAdblockEnabled() && _isShowedAdBlockPanel != 1)
+        {
+            AdBlockPanel.SetActive(true);
+            _isShowedAdBlockPanel = 1;
+            PlayerPrefs.SetInt("ShowedAdBlockPanel", _isShowedAdBlockPanel);
+            PlayerPrefs.Save();
+        }
+    }
+
     private void OnEnable()
     {
         GP_Ads.OnAdsStart += OnRewardedStart;
@@ -41,7 +63,7 @@ public class AdsManager : MonoBehaviour
         ShowRewarded(nameRewarded);
     }
 
-    // Показать rewarded video
+    // РџРѕРєР°Р·Р°С‚СЊ rewarded video
     public void ShowRewarded(string nameRewarded)
     {
         MainGameSettings.instance.PauseGame();
@@ -49,13 +71,13 @@ public class AdsManager : MonoBehaviour
     }
 
 
-    // Начался показ
+    // РќР°С‡Р°Р»СЃСЏ РїРѕРєР°Р·
     private void OnRewardedStart()
     {
         MainGameSettings.instance.PauseGame();
         Debug.Log("ON REWARDED: START");
     }
-    // Получена награда
+    // РџРѕР»СѓС‡РµРЅР° РЅР°РіСЂР°РґР°
     private void OnRewardedReward(string value)
     {
         if (value == "COINS")
@@ -64,13 +86,21 @@ public class AdsManager : MonoBehaviour
             StaticValue.money += 100;
             PlayerPrefs.SetInt("Money", StaticValue.money);
             PlayerPrefs.Save();
+            AdS_ReceivedPanel.SetActive(true);
         }
 
-        if (value == "GEMS")
-            Debug.Log("ON REWARDED: +5 GEMS");
+        if (value == "SKIN")
+        {
+            _skinADS.isBuy = true;
+            _skinADS.buttonBuy.gameObject.SetActive(false);
+            _skinADS.buttonSelect.gameObject.SetActive(true);
+            PlayerPrefs.SetInt("buy" + _skinADS.scinID, 1);
+            PlayerPrefs.Save();
+            AdS_ReceivedPanel.SetActive(true);
+        }
     }
 
-    // Закончился показ
+    // Р—Р°РєРѕРЅС‡РёР»СЃСЏ РїРѕРєР°Р·
     private void OnRewardedClose(bool success)
     {
         MainGameSettings.instance.UnPauseGame();
@@ -78,21 +108,26 @@ public class AdsManager : MonoBehaviour
     }
 
 
-    // Показать fullscreen
+    // РџРѕРєР°Р·Р°С‚СЊ fullscreen
     public void ShowFullscreen()
     {
-        GP_Ads.ShowFullscreen(OnFullscreenStart, OnFullscreenClose);
+        if (StaticValue.isFirstEndGame)
+            GP_Ads.ShowFullscreen(OnFullscreenStart, OnFullscreenClose);
+
+        Debug.Log(StaticValue.isFirstEndGame);
     }
 
-    // Начался показ
+    // РќР°С‡Р°Р»СЃСЏ РїРѕРєР°Р·
     private void OnFullscreenStart()
     {
         Debug.Log("ON FULLSCREEN START");
     }
 
-    // Закончился показ
+    // Р—Р°РєРѕРЅС‡РёР»СЃСЏ РїРѕРєР°Р·
     private void OnFullscreenClose(bool success)
     {
         Debug.Log("ON FULLSCREEN CLOSE");
     }
+
+    public void ShowSticky() => GP_Ads.ShowSticky();
 }

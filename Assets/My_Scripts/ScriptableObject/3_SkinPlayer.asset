@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c07e191ac253114a9ebb03b99d5480a, type: 3}
   m_Name: 3_SkinPlayer
   m_EditorClassIdentifier: 
-  mass: 4
-  maxCountBomb: 30
-  maxHeight: 60
-  speedRotateMobile: 30
-  speedUpDownMobile: 17
+  mass: 15
+  maxCountBomb: 20
+  maxHeight: 40
+  speedRotateMobile: 15
+  speedUpDownMobile: 10

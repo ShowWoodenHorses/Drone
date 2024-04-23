@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mass: 20
   maxCountBomb: 10
-  maxHeight: 40
-  speedRotateMobile: 20
+  maxHeight: 30
+  speedRotateMobile: 10
   speedUpDownMobile: 7

@@ -5,6 +5,7 @@ using UnityEngine;
 public class StaticValue : MonoBehaviour
 {
     public static int money;
+    public static bool isFirstEndGame = false;
 
     private void Awake()
     {

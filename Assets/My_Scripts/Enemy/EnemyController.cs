@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour, IDamagable
     [SerializeField] private protected int _maxHealth;
     [SerializeField] private protected int _health;
     [SerializeField] private NavMeshAgent _agent;
+    [SerializeField] private AudioSource _audio;
 
     [SerializeField] private GameObject _target;
     public GameObject player;
@@ -57,6 +58,11 @@ public class EnemyController : MonoBehaviour, IDamagable
     }
     void Start()
     {
+        if (_audio != null)
+        {
+            _audio = GetComponent<AudioSource>();
+            _audio.volume = PlayerPrefs.GetFloat("VolumeSetting");
+        }
         _health = _maxHealth;
     }
 

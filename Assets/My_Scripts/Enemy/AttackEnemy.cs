@@ -15,7 +15,7 @@ public class AttackEnemy : MonoBehaviour
     [SerializeField] private float _cooldownTimer;
     [SerializeField] private bool _isCooldown = false;
 
-    [SerializeField] private Vector3 zeroVector3 = new Vector3(0.1f, 0.1f, -1f);
+    [SerializeField] private Vector3 zeroVector3 = new Vector3(0f, 0f, 0f);
 
     private void Start()
     {

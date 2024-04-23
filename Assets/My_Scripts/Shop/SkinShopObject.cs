@@ -13,7 +13,7 @@ public class SkinShopObject : MonoBehaviour
 
     private void Start()
     {
-
+        PlayerPrefs.DeleteAll();
         if (PlayerPrefs.HasKey(nameSkin))
         {
             activeScinID = PlayerPrefs.GetInt(nameSkin);

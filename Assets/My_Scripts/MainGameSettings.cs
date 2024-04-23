@@ -28,11 +28,13 @@ public class MainGameSettings : MonoBehaviour
     {
         Time.timeScale = 0f;
         AudioListener.pause = true;
+        GP_Game.GameplayStop();
     }
 
     public void UnPauseGame()
     {
         Time.timeScale = 1f;
         AudioListener.pause = false;
+        GP_Game.GameplayStart();
     }
 }

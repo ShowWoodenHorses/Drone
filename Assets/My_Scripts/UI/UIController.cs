@@ -5,13 +5,14 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 using GamePush;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class UIController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _textCountKillEnemy;
     [SerializeField] private int _countKillEnemy;
 
-    [Header ("Health Bar")]
+    [Header("Health Bar")]
     [SerializeField] private Slider _sliderHealth;
     [SerializeField] private int _maxHealth;
     [SerializeField] private int _health;
@@ -29,7 +30,7 @@ public class UIController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _textMoneyForGame;
     [SerializeField] private TextMeshProUGUI _textMoney;
 
-
+    [SerializeField] private GameObject TutorPanel;
 
     private void OnEnable()
     {
@@ -46,20 +47,25 @@ public class UIController : MonoBehaviour
     }
     void Start()
     {
-        GP_Ads.ShowFullscreen();
+        MainGameSettings.instance.UnPauseGame();
         _moneyForGame = 0;
         LosePanel.SetActive(false);
         FailedRewardPanel.SetActive(false);
         _health = _maxHealth;
         _sliderHealth.value = _health;
         _sliderHealth.maxValue = _maxHealth;
+        TutorPanel.SetActive(true);
+        GP_Game.GameplayStart();
     }
 
     void Update()
     {
+        if (LosePanel.activeInHierarchy)
+        {
+            _textMoney.text = StaticValue.money.ToString();
+            _textMoneyForGame.text = _moneyForGame.ToString();
+        }
         _sliderHealth.value = _health;
-        _textMoney.text = StaticValue.money.ToString();
-        _textMoneyForGame.text = _moneyForGame.ToString();
         _textCountKillEnemy.text = _countKillEnemy.ToString();
         _textCountBomb.text = _dropBomb.countBomb.ToString();
     }
@@ -88,11 +94,13 @@ public class UIController : MonoBehaviour
     private void GameOver()
     {
         Time.timeScale = 0f;
-        _moneyForGame += Convert.ToInt32( _countKillEnemy * 2.5f);
+        _moneyForGame += Convert.ToInt32(_countKillEnemy * 2.5f);
         LosePanel.SetActive(true);
         StaticValue.money += _moneyForGame;
+        StaticValue.isFirstEndGame = true;
         PlayerPrefs.SetInt("Money", StaticValue.money);
         PlayerPrefs.Save();
+        GP_Game.GameplayStop();
     }
 
     public void ShowPanelFailedReward()

@@ -16,8 +16,12 @@ public class DropBomb : MonoBehaviour
     public float maxHeight;
     [SerializeField] private float _minHeight;
 
+    [SerializeField] private AudioSource _audio;
+
     private void Start()
     {
+        _audio = GetComponent<AudioSource>();
+        _audio.volume = PlayerPrefs.GetFloat("VolumeSetting");
         skinID = PlayerPrefs.GetInt(nameSkin);
         _bomb = bombs[skinID];
         countBomb = maxCountBomb;
@@ -38,6 +42,7 @@ public class DropBomb : MonoBehaviour
     {
         if (countBomb > 0)
         {
+            _audio.Play();
             countBomb--;
             GameObject obj = Instantiate(_bomb, spawnPos.position, Quaternion.identity);
             Destroy(obj, 15f);

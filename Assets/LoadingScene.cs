@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using GamePush;
 
 
 public class LoadingScene : MonoBehaviour
@@ -21,6 +22,7 @@ public class LoadingScene : MonoBehaviour
         anim = GetComponent<Animator>();
         if (isOverAnimationLoading)
             anim.SetTrigger("SceneClose");
+        
     }
 
     void Update()

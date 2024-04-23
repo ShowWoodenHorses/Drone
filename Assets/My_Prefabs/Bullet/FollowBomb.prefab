@@ -101,6 +101,7 @@ MonoBehaviour:
   _effectExplotion: {fileID: 1974830201887114, guid: 8baff3207836e304f95274c39c8d572c, type: 3}
   _effectInteraction: {fileID: 1974830201887114, guid: 536f92f2f8d80624aa75ac72b92b5195, type: 3}
   _raduisAttackObj: {fileID: 574020142131894962, guid: 16e0eae95676a1349801744f71e9b8a8, type: 3}
+  _audio: {fileID: 0}
   _minDistance: 15
   _speed: 8
   _target: {fileID: 0}

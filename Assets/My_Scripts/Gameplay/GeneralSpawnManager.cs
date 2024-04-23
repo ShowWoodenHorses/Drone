@@ -82,5 +82,7 @@ public class GeneralSpawnManager : MonoBehaviour
             _textTimeToTheNextWaveForPause.text = Mathf.Round(timeBetweenWaveList[nextIndex]).ToString();
         }
         _timeBetweenSpawnEnemy = _startTimeBetweenSpawnEnemy;
+        if (_currentWave == 3)
+            spawnerList.Add(spawnManagerWater);
     }
 }

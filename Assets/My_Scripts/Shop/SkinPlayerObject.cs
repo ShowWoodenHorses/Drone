@@ -29,6 +29,11 @@ public class SkinPlayerObject : MonoBehaviour
         _dropBomb.maxHeight = skinsSettings[scinsID].maxHeight;
         _buttonHandler.speedRotate = skinsSettings[scinsID].speedRotateMobile;
         _buttonHandler.speedUpDown = skinsSettings[scinsID].speedUpDownMobile;
+        if (scinsID == 3)
+            transform.GetComponent<DronePropelers>().enabled = true;
+        else
+            transform.GetComponent<DronePropelers>().enabled = false;
+
     }
     private void Start()
     {

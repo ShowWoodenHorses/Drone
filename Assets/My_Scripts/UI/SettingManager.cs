@@ -6,14 +6,18 @@ using UnityEngine.UI;
 
 public class SettingManager : MonoBehaviour
 {
-
+    [SerializeField] private AudioSource audioBackFonMusic;
     [SerializeField] private Toggle _hintsToggle;
     [SerializeField] private Toggle _populationToggle;
     [SerializeField] private Slider _volumeSlider;
+    [SerializeField] private Slider _volumeMusicSlider;
     [SerializeField] private GameObject _iconActiveSound;
     [SerializeField] private GameObject _iconDeactiveSound;
+    [SerializeField] private GameObject _iconActiveMusic;
+    [SerializeField] private GameObject _iconDeactiveMusic;
 
-    public static float currentVolume;
+    public float currentVolume;
+    public float currentVolumeMusic;
 
     public static bool isHints = false;
     public static bool isPopulation = false;
@@ -23,6 +27,10 @@ public class SettingManager : MonoBehaviour
         if (PlayerPrefs.HasKey("VolumeSetting"))
         {
             _volumeSlider.value = PlayerPrefs.GetFloat("VolumeSetting");
+        }
+        if (PlayerPrefs.HasKey("VolumeMusic"))
+        {
+            _volumeMusicSlider.value = PlayerPrefs.GetFloat("VolumeMusic");
         }
         currentVolume = _volumeSlider.value;
         if (currentVolume < 0.05f)
@@ -34,6 +42,17 @@ public class SettingManager : MonoBehaviour
         {
             _iconDeactiveSound.SetActive(false);
             _iconActiveSound.SetActive(true);
+        }
+        currentVolumeMusic = _volumeMusicSlider.value;
+        if (currentVolumeMusic < 0.05f)
+        {
+            _iconDeactiveMusic.SetActive(true);
+            _iconActiveMusic.SetActive(false);
+        }
+        else
+        {
+            _iconDeactiveMusic.SetActive(false);
+            _iconActiveMusic.SetActive(true);
         }
         _hintsToggle.isOn = isHints;
         _populationToggle.isOn = isPopulation;
@@ -60,5 +79,24 @@ public class SettingManager : MonoBehaviour
             PlayerPrefs.SetFloat("VolumeSetting", _volumeSlider.value);
             PlayerPrefs.Save();
         }
+        if (currentVolumeMusic != _volumeMusicSlider.value)
+        {
+            currentVolumeMusic = _volumeMusicSlider.value;
+            if (currentVolumeMusic < 0.05f)
+            {
+                _volumeMusicSlider.value = 0;
+                currentVolumeMusic = 0;
+                _iconDeactiveMusic.SetActive(true);
+                _iconActiveMusic.SetActive(false);
+            }
+            else
+            {
+                _iconDeactiveMusic.SetActive(false);
+                _iconActiveMusic.SetActive(true);
+            }
+            PlayerPrefs.SetFloat("VolumeMusic", _volumeMusicSlider.value);
+            PlayerPrefs.Save();
+        }
+        audioBackFonMusic.volume = _volumeMusicSlider.value;
     }
 }

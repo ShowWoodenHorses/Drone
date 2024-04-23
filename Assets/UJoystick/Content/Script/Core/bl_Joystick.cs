@@ -25,7 +25,7 @@ public class bl_Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private int lastId = -2;
     private Image stickImage;
     private Image backImage;
-    private Canvas m_Canvas;
+    [SerializeField] private Canvas m_Canvas;
     private float diff;
     private Vector3 PressScaleVector;
 
@@ -124,7 +124,7 @@ public class bl_Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             isFree = false;
             //Get Position of current touch
-            Vector3 position = bl_JoystickUtils.TouchPosition(m_Canvas,GetTouchID);
+            Vector3 position = bl_JoystickUtils.TouchPosition(m_Canvas,data.pointerId);
 
             //Rotate into the area circumferential of joystick
             if (Vector2.Distance(DeathArea, position) < radio)

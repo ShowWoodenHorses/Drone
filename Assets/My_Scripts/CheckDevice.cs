@@ -6,6 +6,7 @@ public class CheckDevice : MonoBehaviour
     public GameObject MobileInputPanel;
     public GameObject ArrowOverEnemy;
     public GameObject RandomPeople;
+    public GameObject DeactiveForMobile;
 
     void Awake()
     {
@@ -20,12 +21,14 @@ public class CheckDevice : MonoBehaviour
             //false
             Player.GetComponent<Rigidbody>().useGravity = false;
             Player.GetComponent<DroneMovement>().enabled = false;
+            DeactiveForMobile.SetActive(false);
         }
         else
         {
             //true
             Player.GetComponent<Rigidbody>().useGravity = true;
             Player.GetComponent<DroneMovement>().enabled = true;
+            DeactiveForMobile.SetActive(true);
 
             //false
             Player.GetComponent<MobileControllerDrone>().enabled = false;
