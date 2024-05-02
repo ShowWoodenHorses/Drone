@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using GamePush;
 
 public class SetPauseOnObject : MonoBehaviour
 {

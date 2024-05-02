@@ -1,11 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
-using GamePush;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class UIController : MonoBehaviour
 {
@@ -55,7 +52,6 @@ public class UIController : MonoBehaviour
         _sliderHealth.value = _health;
         _sliderHealth.maxValue = _maxHealth;
         TutorPanel.SetActive(true);
-        GP_Game.GameplayStart();
     }
 
     void Update()
@@ -100,7 +96,6 @@ public class UIController : MonoBehaviour
         StaticValue.isFirstEndGame = true;
         PlayerPrefs.SetInt("Money", StaticValue.money);
         PlayerPrefs.Save();
-        GP_Game.GameplayStop();
     }
 
     public void ShowPanelFailedReward()

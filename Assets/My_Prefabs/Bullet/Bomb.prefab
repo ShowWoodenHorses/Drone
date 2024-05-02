@@ -235,11 +235,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _distance: 100
   _damage: 2
+  _delayDestroy: 1
   _rb: {fileID: 0}
   _effectExplotion: {fileID: 1974830201887114, guid: 8baff3207836e304f95274c39c8d572c, type: 3}
   _effectInteraction: {fileID: 1974830201887114, guid: 536f92f2f8d80624aa75ac72b92b5195, type: 3}
-  _raduisAttackObj: {fileID: 8016895366072529066, guid: 8e43731001b6b444891d877512ee254e, type: 3}
-  _audio: {fileID: 0}
+  _raduisAttackObj: {fileID: 574020142131894962, guid: c1bd7d27b142f994bb4adb686d6ef23b, type: 3}
+  _isDestroyEffect: 1
 --- !u!1001 &7466437396565468699
 PrefabInstance:
   m_ObjectHideFlags: 0

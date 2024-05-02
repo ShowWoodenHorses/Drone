@@ -5,16 +5,16 @@ using UnityEngine.UI;
 
 public class SkinObject : MonoBehaviour
 {
-    public int cost; // стоимость скина
-    public int scinID; // id скина. куплен ли скин?
-    public bool isBuy; // куплен ли скин?
-    public bool isSelected; // активирован ли скин?
+    public int cost; // СЃС‚РѕРёРјРѕСЃС‚СЊ СЃРєРёРЅР°
+    public int scinID; // id СЃРєРёРЅР°. РєСѓРїР»РµРЅ Р»Рё СЃРєРёРЅ?
+    public bool isBuy; // РєСѓРїР»РµРЅ Р»Рё СЃРєРёРЅ?
+    public bool isSelected; // Р°РєС‚РёРІРёСЂРѕРІР°РЅ Р»Рё СЃРєРёРЅ?
 
     int money;
 
-    public Button buttonBuy; // ссылка на кнопку "купить"
-    public Button buttonSelect; // ссылка на кнопку "применить"
-    public SkinShopObject skinShop; // ссылка на скрипт ScinShop магазина, который находится на объекте Canvas
+    public Button buttonBuy; // СЃСЃС‹Р»РєР° РЅР° РєРЅРѕРїРєСѓ "РєСѓРїРёС‚СЊ"
+    public Button buttonSelect; // СЃСЃС‹Р»РєР° РЅР° РєРЅРѕРїРєСѓ "РїСЂРёРјРµРЅРёС‚СЊ"
+    public SkinShopObject skinShop; // СЃСЃС‹Р»РєР° РЅР° СЃРєСЂРёРїС‚ ScinShop РјР°РіР°Р·РёРЅР°, РєРѕС‚РѕСЂС‹Р№ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РѕР±СЉРµРєС‚Рµ Canvas
 
 
     private void Start()

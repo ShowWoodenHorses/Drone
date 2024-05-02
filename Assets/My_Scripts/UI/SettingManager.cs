@@ -1,14 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class SettingManager : MonoBehaviour
 {
     [SerializeField] private AudioSource audioBackFonMusic;
     [SerializeField] private Toggle _hintsToggle;
+    [SerializeField] private Toggle _hintsChargedToggle;
+    [SerializeField] private Toggle _hintsFinalPointsToggle;
     [SerializeField] private Toggle _populationToggle;
+    [SerializeField] private Toggle _effectSmokeToggle;
+    [SerializeField] private Toggle _postProcessingToggle;
     [SerializeField] private Slider _volumeSlider;
     [SerializeField] private Slider _volumeMusicSlider;
     [SerializeField] private GameObject _iconActiveSound;
@@ -19,8 +25,12 @@ public class SettingManager : MonoBehaviour
     public float currentVolume;
     public float currentVolumeMusic;
 
-    public static bool isHints = false;
+    public static bool isHintsArrowDirectionEnemy = false;
+    public static bool isHintsArrowChargedsDrone = false;
+    public static bool isHintsArrowFinalPointEnemy = false;
     public static bool isPopulation = false;
+    public static bool isEffectSmoke = true;
+    public static bool isPostPocessing = true;
 
     private void Start()
     {
@@ -54,13 +64,21 @@ public class SettingManager : MonoBehaviour
             _iconDeactiveMusic.SetActive(false);
             _iconActiveMusic.SetActive(true);
         }
-        _hintsToggle.isOn = isHints;
+        _hintsToggle.isOn = isHintsArrowDirectionEnemy;
+        _hintsChargedToggle.isOn = isHintsArrowChargedsDrone;
+        _hintsFinalPointsToggle.isOn = isHintsArrowFinalPointEnemy;
         _populationToggle.isOn = isPopulation;
+        _effectSmokeToggle.isOn = isEffectSmoke;
+        _postProcessingToggle.isOn = isPostPocessing;
     }
     private void Update()
     {
-        isHints = _hintsToggle.isOn;
+        isHintsArrowDirectionEnemy = _hintsToggle.isOn;
+        isHintsArrowChargedsDrone = _hintsChargedToggle.isOn;
+        isHintsArrowFinalPointEnemy = _hintsFinalPointsToggle.isOn;
         isPopulation = _populationToggle.isOn;
+        isEffectSmoke = _effectSmokeToggle.isOn;
+        isPostPocessing = _postProcessingToggle.isOn;
         if (currentVolume != _volumeSlider.value)
         {
             currentVolume = _volumeSlider.value;

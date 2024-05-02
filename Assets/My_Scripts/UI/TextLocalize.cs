@@ -1,7 +1,6 @@
 
 using UnityEngine;
 using TMPro;
-using GamePush;
 
 public class TextLocalize : MonoBehaviour
 {
@@ -21,16 +20,15 @@ public class TextLocalize : MonoBehaviour
 
     void SetText()
     {
-        Language lang = GP_Language.Current();
-        switch (lang)
+        switch (Application.systemLanguage)
         {
-            case Language.English:
+            case SystemLanguage.English:
                 text.text = textENG;
                 break;
-            case Language.Russian:
+            case SystemLanguage.Russian:
                 text.text = textRUS;
                 break;
-            case Language.Turkish:
+            case SystemLanguage.Turkish:
                 text.text = textTUR;
                 break;
             default:

@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
-using GamePush;
 
 
 public class LoadingScene : MonoBehaviour

@@ -1,6 +1,4 @@
-using GamePush;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class MainGameSettings : MonoBehaviour
@@ -15,26 +13,20 @@ public class MainGameSettings : MonoBehaviour
     }
     private void OnEnable()
     {
-        GP_Game.OnPause += PauseGame;
-        GP_Game.OnResume += UnPauseGame;
     }
     private void OnDisable()
     {
-        GP_Game.OnPause -= PauseGame;
-        GP_Game.OnResume -= UnPauseGame;
     }
 
     public void PauseGame()
     {
         Time.timeScale = 0f;
         AudioListener.pause = true;
-        GP_Game.GameplayStop();
     }
 
     public void UnPauseGame()
     {
         Time.timeScale = 1f;
         AudioListener.pause = false;
-        GP_Game.GameplayStart();
     }
 }

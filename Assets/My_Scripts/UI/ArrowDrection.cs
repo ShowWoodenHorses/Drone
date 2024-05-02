@@ -26,7 +26,7 @@ public class ArrowDrection : MonoBehaviour
         Destroy(removeArrowFromDictonary);
     }
 
-    private void Update()
+    public void Update()
     {
         Plane[] planes = GeometryUtility.CalculateFrustumPlanes(_camera);
         foreach (var kvp in enemiesDictonary)

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using GamePush;
 using System;
 using UnityEngine.Events;
 
@@ -20,7 +19,6 @@ public class AdsManager : MonoBehaviour
 
     private void Awake()
     {
-        ShowSticky();
         if (Instance == null)
         {
             Instance = this;
@@ -34,29 +32,14 @@ public class AdsManager : MonoBehaviour
     private void Start()
     {
         AdS_ReceivedPanel.SetActive(false);
-        if (GP_Ads.IsAdblockEnabled() && _isShowedAdBlockPanel != 1)
-        {
-            AdBlockPanel.SetActive(true);
-            _isShowedAdBlockPanel = 1;
-            PlayerPrefs.SetInt("ShowedAdBlockPanel", _isShowedAdBlockPanel);
-            PlayerPrefs.Save();
-        }
     }
 
     private void OnEnable()
     {
-        GP_Ads.OnAdsStart += OnRewardedStart;
-        GP_Ads.OnAdsStart += OnFullscreenStart;
-        GP_Ads.OnAdsClose += OnRewardedClose;
-        GP_Ads.OnAdsClose += OnFullscreenClose;
     }
 
     private void OnDisable()
     {
-        GP_Ads.OnAdsStart -= OnRewardedStart;
-        GP_Ads.OnAdsStart -= OnFullscreenStart;
-        GP_Ads.OnAdsClose -= OnRewardedClose;
-        GP_Ads.OnAdsClose -= OnFullscreenClose;
     }
     public void AdsRewardedButton(string nameRewarded)
     {
@@ -67,7 +50,6 @@ public class AdsManager : MonoBehaviour
     public void ShowRewarded(string nameRewarded)
     {
         MainGameSettings.instance.PauseGame();
-        GP_Ads.ShowRewarded(nameRewarded, OnRewardedReward, OnRewardedStart, OnRewardedClose);
     }
 
 
@@ -112,7 +94,6 @@ public class AdsManager : MonoBehaviour
     public void ShowFullscreen()
     {
         if (StaticValue.isFirstEndGame)
-            GP_Ads.ShowFullscreen(OnFullscreenStart, OnFullscreenClose);
 
         Debug.Log(StaticValue.isFirstEndGame);
     }
@@ -129,5 +110,4 @@ public class AdsManager : MonoBehaviour
         Debug.Log("ON FULLSCREEN CLOSE");
     }
 
-    public void ShowSticky() => GP_Ads.ShowSticky();
 }
